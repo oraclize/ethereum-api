@@ -286,8 +286,8 @@ End solidity-cborutils
 
 contract usingOraclize {
     uint constant day = 60*60*24;
-    uint constant week = 60*60*24*7;
-    uint constant month = 60*60*24*30;
+    uint constant week = day*7;
+    uint constant month = day*30;
     byte constant proofType_NONE = 0x00;
     byte constant proofType_TLSNotary = 0x10;
     byte constant proofType_Ledger = 0x30;
